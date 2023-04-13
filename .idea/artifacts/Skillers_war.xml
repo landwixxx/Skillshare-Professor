@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Skillers:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>Skillers</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="Skillers-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Skillers:war exploded" />
+    </root>
+  </artifact>
+</component>
