@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "introServlet", value = "/")
-public class IndexController extends HttpServlet {
+@WebServlet(name = "welcomeServlet", value = "/welcome")
+public class WelcomeController extends HttpServlet {
     private String message;
     private final String HOME = "/home";
     private final String VIEW = "WEB-INF/view/";
@@ -20,7 +20,7 @@ public class IndexController extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         response.setContentType("text/html");
-        request.getRequestDispatcher("index.jsp").forward(request, response);
+        request.getRequestDispatcher(VIEW + "welcome.jsp").forward(request, response);
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

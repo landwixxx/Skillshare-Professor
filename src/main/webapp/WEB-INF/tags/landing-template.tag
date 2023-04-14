@@ -6,17 +6,12 @@
 <html>
 <head>
     <title>Skillshare</title>
-    <base href="${pageContext.request.contextPath}/">
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="favicon.png" />
 
     <!-- CSS -->
-
-    <link rel="stylesheet" href="resources/css/main.css"/>
-    <link rel="stylesheet" href="assets/resources/css/template.css"/>
-    <link rel="stylesheet" href="assets/libraries/materialize/css/materialize.css"/>
-    <link rel="stylesheet" href="assets/libraries/font-awesome/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -39,11 +34,24 @@
     .bigMessageDiv{
         padding: 0 0 0 2em;
         color: white;
-        font-family: monospace;
+        font-family: 'Raleway';
+        cursor: pointer;
+        transition: all.2s;
     }
+    .bigMessageDiv:hover{
+        transform: scale(1.03);
+    }
+
+
     .bigMessage{
+        color: white;
         font-size: 5em;
         margin: 0;
+    }
+
+
+    .message{
+        font-family: 'Montserrat', sans-serif;
     }
 
 </style>

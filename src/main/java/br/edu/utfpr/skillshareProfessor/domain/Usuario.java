@@ -17,4 +17,6 @@ public class Usuario {
     private String nome;
     @NonNull
     private String email;
+    @NonNull
+    private String senha;
 }

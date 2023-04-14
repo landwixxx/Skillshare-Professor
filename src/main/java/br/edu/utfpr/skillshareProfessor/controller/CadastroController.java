@@ -28,7 +28,7 @@ public class CadastroController extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String nome = request.getParameter("nome");
         String email = request.getParameter("email");
-        Usuario usuario = new Usuario(nome, email);
+//        Usuario usuario = new Usuario(nome, email, pass);
 
         request.setAttribute("message", message);
         request.getRequestDispatcher(HOME).forward(request, response);

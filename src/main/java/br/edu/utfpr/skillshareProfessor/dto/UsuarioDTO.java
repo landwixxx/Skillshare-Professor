@@ -9,4 +9,6 @@ public class UsuarioDTO {
     private String nome;
     @NonNull
     private String email;
+    @NonNull
+    private String senha;
 }

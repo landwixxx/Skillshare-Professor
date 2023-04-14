@@ -6,19 +6,33 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name="eventos")
+@Table(name="lessons")
 @Data
 @NoArgsConstructor
 @RequiredArgsConstructor(access = AccessLevel.PUBLIC)
-public class Evento{
+public class Lesson {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NonNull
-    private String titulo;
+    private Long professorId;
+    @NonNull
+    private String title;
     @NonNull
     private String desc;
-    @NonNull
-    private Date data;
+
+    private boolean mon;
+
+    private boolean tue;
+
+    private boolean wed;
+
+    private boolean thu;
+
+    private boolean fri;
+
+    private boolean sat;
+
+    private boolean sun;
 
 }

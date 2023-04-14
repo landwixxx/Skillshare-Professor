@@ -6,6 +6,6 @@
         phEmail="joão@exemplo.com"
         phName="Jhon Don"
         phPassword="*************"
-        formAction="login"
+        formAction="signup"
         instruction="Realize seu cadastro"
 />

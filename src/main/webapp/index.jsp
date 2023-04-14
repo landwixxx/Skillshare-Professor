@@ -6,7 +6,7 @@
     <jsp:body>
         <div class="bigMessageDiv" onClick="window.location.replace(window.location.href + 'home')">
             <h1 class="bigMessage">Skillshare</h1>
-            <span>Sua plataforma de estudos online</span>
+            <span class="message">Sua plataforma de estudos online</span>
         </div>
     </jsp:body>
 </t:landing-template>
